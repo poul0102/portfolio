@@ -1,0 +1,29 @@
+.introduce{
+    height: 300px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.box{
+    width: 90%;
+    background-color: rgb(240, 240, 240);
+    border: 5px;
+}
+
+.title{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+}
+
+.contents{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
