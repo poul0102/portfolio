@@ -1,83 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강상택의 포트폴리오</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
 </head>
+
 <body>
-    <h1>-KST's PORTFOLIO-</h1>
-    <div class="introduce">
-        <img style="float: left; margin-right: 5%;" src="https://placehold.co/600x400" width="300px" height="300px"/>
-        <div>
-            <i class="fa-regular fa-circle-user"></i>
-            <a>강상택</a>
-        </div>
-        <div>
-            <i class="fa-regular fa-calendar"></i>
-            <a>2001.01.02</a>
-        </div>
-        <div>
-            <i class="fa-regular fa-envelope"></i>
-            <a>lday217617@gmail.com</a>
-        </div>
-        <div>
-            
-        </div>
-        <a href="https://github.com/poul0102">GitHub</a>
-    </div><div style="clear:both;"></div>
 
-    <div class="head">
-        <h1>SKILLS</h1>
-    </div>
-    <div class="box">
-            <div>
-                <a class="title">Language</a>
-                <a class="contents">가나다</a>
-                <a class="contents">가나다</a>
-            </div>
-            <div>
-                <a class="title">FrontEnd</a>
-                <a class="contents">가나다</a>
-                <a class="contents">가나다</a>
-            </div>
-            <div>
-                <a class="title">BackEnd</a>
-                <a class="contents">가나다</a>
-                <a class="contents">가나다</a>
-            </div>
-    </div>
+    <!-- Header -->
+    <header>
+        <h1>강상택</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#certificate">자격증</a></li>
+                <li><a href="#timeline">타임라인</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="head">
-        <h1>PROJECTS</h1>
-    </div>
+    <!-- About -->
+    <section id="about">
+        <h2>소개</h2>
+        <div class="about-content">
+            <img src="https://placehold.co/600x400" alt="프로필 이미지" />
+            <p>여기에 소개글 작성하기</p>
+        </div>
+    </section>
 
-    <div class="head">
-        <h1>CERTIFICATE</h1>
-    </div>
-    <div class="box">
-            <div>
-                <a class="title">컴퓨터활용능력2급</a>
-                <a class="contents">대한상공회의소</a>
-                <a class="contents">2019.09 취득</a>
+    <!-- Skills -->
+    <section id="skills">
+        <h2>기술 스택</h2>
+        <ul>
+            <li>Java</li>
+            <li>하</li>
+            <li>나</li>
+            <li>씩</li>
+            <li>채</li>
+            <li>워</li>
+            <li>나</li>
+            <li>가</li>
+            <li>기</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>프로젝트</h2>
+
+        <article>
+            <h3>약품 관리 및 약국 찾기 모바일 앱</h3>
+            <p>사용자가 보유 중인 약품을 등록하고 유통기한을 관리하며, 사용자 위치 기반으로 가까운 약국 정보를 확인할 수 있도록 도와줍니다.</p>
+        </article>
+
+        <article>
+            <h3>이미지 쇼핑몰 웹사이트</h3>
+            <p>사용자가 쇼핑몰 웹사이트에서 원하는 이미지의 상세 정보를 확인하고 구입할 수 있으며, 사용자는 구입한 이미지를 이메일로 받아볼 수 있습니다. </p>
+        </article>
+    </section>
+
+    <!-- Certificate -->
+    <section id="certificate">
+        <h2>자격증</h2>
+
+        <div class="certificate-container">
+            <article>
+                <h3>컴퓨터활용능력 2급</h3>
+                <ul>
+                    <li><strong>발급 기관:</strong> 대한상공회의소</li>
+                    <li><strong>자격번호:</strong> 19-K9-088237</li>
+                    <li><strong>취득일:</strong> 2019.09.20</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>정보처리기사</h3>
+                <ul>
+                    <li><strong>발급 기관:</strong> 한국산업인력공단</li>
+                    <li><strong>자격번호:</strong> 24201290221E</li>
+                    <li><strong>취득일:</strong> 2024.06.18</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>SQL 개발자(SQLD)</h3>
+                <ul>
+                    <li><strong>발급 기관:</strong> 한국데이터산업진흥원</li>
+                    <li><strong>자격번호:</strong> SQLD-056001690</li>
+                    <li><strong>취득일:</strong> 2025.04.04</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>TOEIC Speaking</h3>
+                <ul>
+                    <li><strong>발급 기관:</strong> 한국TOEIC위원회</li>
+                    <li><strong>자격번호:</strong> 102387</li>
+                    <li><strong>취득일:</strong> 2025.03.22</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2>타임라인</h2>
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="date">2019.09</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>컴퓨터활용능력 2급</h3>
+                </div>
             </div>
-            <div>
-                <a class="title">정보처리기사</a>
-                <a class="contents">한국산업인력공단</a>
-                <a class="contents">2024.06 취득</a>
+
+            <div class="container right">
+                <div class="date">2024.06</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>약품 관리 및 약국 찾기 모바일 앱</h3>
+                    <p>2023.09 ~ 2024.06</p>
+                </div>
             </div>
-            <div>
-                <a class="title">SQLD</a>
-                <a class="contents">한국데이터산업진흥원</a>
-                <a class="contents">2025.04 취득</a>
+
+            <div class="container left">
+                <div class="date">2024.06</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>정보처리기사</h3>
+                </div>
             </div>
-            <div>
-                <a class="title">Toeic Speacking</a>
-                <a class="contents">IH(140)</a>
-                <a class="contents">2025.02 취득</a>
+
+            <div class="container right">
+                <div class="date">2024.12</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>이미지 쇼핑몰 웹사이트</h3>
+                    <p>2024.11 ~ 2024.12</p>
+                </div>
             </div>
-    </div>
+
+            <div class="container left">
+                <div class="date">2025.02</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>대학 졸업</h3>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="date">2025.03</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>Toeic Speaking</h3>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="date">2025.04</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>SQL 개발자(SQLD)</h3>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="date">2025.07</div>
+                <i class="icon fa fa-home"></i>
+                <div class="timeline-content">
+                    <h3>우리FISA 5기</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>연락처</h2>
+        <p>Email: lday217617@gmail.com</p>
+        <p>Phone Number: 010-2745-0689</p>
+        <p>GitHub: <a href="https://github.com/poul0102" target="_blank">https://github.com/poul0102</a></p>
+    </section>
+
 </body>
+
 </html>

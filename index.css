@@ -1,29 +1,315 @@
-.introduce{
-    height: 300px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.head{
+body {
+    line-height: 2;
+    background-color: #f9f9f9;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+/* 헤더 스타일 */
+header {
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 10px;
 }
 
-.box{
-    width: 90%;
-    background-color: rgb(240, 240, 240);
-    border: 5px;
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
 }
 
-.title{
-    display: inline-flex;
+nav ul li a:hover {
+    color: #007acc;
+}
+
+/* 섹션 공통 스타일 */
+section {
+    margin-bottom: 40px;
+    scroll-margin-top: 150px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-left: 6px solid #007acc;
+    padding-left: 10px;
+    color: #007acc;
+}
+
+/* About */
+.about-content {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 130px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.contents{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
+.about-content img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-content p {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Skills */
+#skills ul {
+    list-style: disc inside;
+    max-width: 600px;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* Projects */
+#projects article {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007acc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: #444;
+}
+
+#projects h3 {
+    color: #005f99;
+    margin-bottom: 8px;
+}
+
+/* Certificate */
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#certificate article {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007acc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#certificate h3 {
+    color: #005f99;
+    margin-bottom: 8px;
+}
+
+#certificate ul li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #444;
+}
+
+
+/* Timeline */
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/* 라인 만들기 */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #007acc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.container {
+    padding: 30px 60px;
+    position: relative;
+    width: 50%;
+}
+
+.container.right {
+    left: 50%;
+}
+
+/* 타임 포인트 만들기 */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid #007acc;
+    right: -11px;
+    top: calc(50% - 11px);
+    z-index: 1;
+}
+
+.container.right::after {
+    left: -12px;
+}
+
+/* 라인과 타임포인트 잇는 선 */
+.container::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    background: #007acc;
+    top: calc(50% - 1px);
+    right: 11px;
+    z-index: 1;
+}
+
+.container.right::before {
+    left: 11px;
+}
+
+.container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 17px);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007acc;
+}
+
+.container.left .date {
+    right: -130px;
+}
+
+.container.right .date {
+    left: -130px;
+}
+
+/* container 안의 포인트 만들기 */
+.container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: #fff;
+    border: 2px solid #007acc;
+    top: calc(50% - 14px);
+    z-index: 1;
+}
+
+.container.left .icon {
+    right: 90px;
+}
+
+.container.right .icon {
+    left: 90px;
+}
+
+.timeline-content {
+    padding: 30px;
+    border: 2px solid #007acc;
+    border-radius: 500px;
+    text-align: center;
+}
+
+/* Contact */
+#contact p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+#contact a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .certificate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::after{
+        left: 90px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+
+    .container.right {
+        left: 0%;
+    }
+
+    .container.left::after, .container.right::after {
+        left: 78px;
+    }
+
+    .container.left::before, .container.right::before {
+        left: 100px;
+        width: 50px;
+    }
+
+    .container.left .date, .container.right .date {
+        right: auto;
+        left: 0px;
+    }
+
+    .container.left .icon, .container.right .icon {
+        right: auto;
+        left: 150px;
+    }
 }
