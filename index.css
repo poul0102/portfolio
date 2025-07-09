@@ -25,7 +25,7 @@ header {
 
 header h1 {
     font-size: 2.4rem;
-    color: #222;
+    color: black;
 }
 
 nav ul {
@@ -55,9 +55,9 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    border-left: 6px solid #BDBDBD;
+    border-left: 6px solid #8c8c8c;
     padding-left: 10px;
-    color: #BDBDBD;
+    color: #8c8c8c;
 }
 
 /* About */
@@ -66,6 +66,7 @@ section h2 {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 0 10%;
 }
 
 .about-content img {
@@ -84,10 +85,35 @@ section h2 {
 
 /* Skills */
 #skills ul {
-    list-style: disc inside;
-    max-width: 600px;
-    color: #444;
-    font-size: 1.1rem;
+    list-style: none;
+    width: 100%;
+    padding: 30px;
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-name {
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 20px;
+    background-color: #dedede;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #b6b6b6;
+    border-radius: 10px;
 }
 
 /* Projects */
@@ -258,7 +284,7 @@ button.timeline-content:hover {
 }
 
 #contact a {
-    color: #BDBDBD;
+    color: #8c8c8c;
     text-decoration: none;
 }
 
@@ -286,7 +312,7 @@ button.timeline-content:hover {
         grid-template-columns: 1fr;
     }
 
-    .timeline::after{
+    .timeline::after {
         left: 90px;
     }
 
@@ -300,21 +326,25 @@ button.timeline-content:hover {
         left: 0%;
     }
 
-    .container.left::after, .container.right::after {
+    .container.left::after,
+    .container.right::after {
         left: 78px;
     }
 
-    .container.left::before, .container.right::before {
+    .container.left::before,
+    .container.right::before {
         left: 100px;
         width: 50px;
     }
 
-    .container.left .date, .container.right .date {
+    .container.left .date,
+    .container.right .date {
         right: auto;
         left: 0px;
     }
 
-    .container.left .icon, .container.right .icon {
+    .container.left .icon,
+    .container.right .icon {
         right: auto;
         left: 150px;
     }
