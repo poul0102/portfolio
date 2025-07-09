@@ -20,6 +20,7 @@ header {
     top: 0;
     left: 20px;
     right: 20px;
+    z-index: 10;
 }
 
 header h1 {
@@ -42,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007acc;
+    color: #BDBDBD;
 }
 
 /* 섹션 공통 스타일 */
@@ -54,9 +55,9 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    border-left: 6px solid #007acc;
+    border-left: 6px solid #BDBDBD;
     padding-left: 10px;
-    color: #007acc;
+    color: #BDBDBD;
 }
 
 /* About */
@@ -94,14 +95,14 @@ section h2 {
     background-color: #fff;
     padding: 15px 20px;
     margin-bottom: 15px;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #BDBDBD;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     color: #444;
 }
 
 #projects h3 {
-    color: #005f99;
+    color: #BDBDBD;
     margin-bottom: 8px;
 }
 
@@ -116,13 +117,13 @@ section h2 {
     background-color: #fff;
     padding: 15px 20px;
     margin-bottom: 15px;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #BDBDBD;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 #certificate h3 {
-    color: #005f99;
+    color: #BDBDBD;
     margin-bottom: 8px;
 }
 
@@ -147,7 +148,7 @@ section h2 {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #007acc;
+    background-color: #BDBDBD;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -172,7 +173,7 @@ section h2 {
     height: 20px;
     border-radius: 20px;
     background: #fff;
-    border: 2px solid #007acc;
+    border: 2px solid #BDBDBD;
     right: -11px;
     top: calc(50% - 11px);
     z-index: 1;
@@ -188,7 +189,7 @@ section h2 {
     position: absolute;
     width: 90px;
     height: 2px;
-    background: #007acc;
+    background: #BDBDBD;
     top: calc(50% - 1px);
     right: 11px;
     z-index: 1;
@@ -205,7 +206,7 @@ section h2 {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: #007acc;
+    color: #BDBDBD;
 }
 
 .container.left .date {
@@ -224,7 +225,7 @@ section h2 {
     height: 30px;
     border-radius: 30px;
     background: #fff;
-    border: 2px solid #007acc;
+    border: 2px solid #BDBDBD;
     top: calc(50% - 14px);
     z-index: 1;
 }
@@ -238,10 +239,15 @@ section h2 {
 }
 
 .timeline-content {
+    width: 100%;
     padding: 30px;
-    border: 2px solid #007acc;
+    border: 2px solid #BDBDBD;
     border-radius: 500px;
     text-align: center;
+}
+
+button.timeline-content:hover {
+    background-color: #BDBDBD;
 }
 
 /* Contact */
@@ -252,7 +258,7 @@ section h2 {
 }
 
 #contact a {
-    color: #007acc;
+    color: #BDBDBD;
     text-decoration: none;
 }
 
