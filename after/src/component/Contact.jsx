@@ -1,22 +1,31 @@
 import Section from './Section';
+import { Mail, Phone, Github } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <Section id="contact" title="연락처">
-      <div className="space-y-2 text-[1.1rem] text-[#444]">
-        <p>Email: lday217617@gmail.com</p>
-        <p>Phone Number: 010-2745-0689</p>
-        <p>
-          GitHub:{' '}
+    <Section id="contact" title="CONTACT" minHeight={false}>
+      <div className="bg-[#1a1a1a] p-10 rounded-xl text-white space-y-6 max-w-[600px] mx-auto">
+        <div className="flex items-center gap-4">
+          <Mail className="w-6 h-6 text-green-300" />
+          <span className="text-lg">lday217617@gmail.com</span>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <Phone className="w-6 h-6 text-green-300" />
+          <span className="text-lg">000-0000-0000</span>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <Github className="w-6 h-6 text-green-300" />
           <a
             href="https://github.com/poul0102"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-lg hover:underline hover:text-green-300"
           >
-            https://github.com/poul0102
+            github.com/poul0102
           </a>
-        </p>
+        </div>
       </div>
     </Section>
   );

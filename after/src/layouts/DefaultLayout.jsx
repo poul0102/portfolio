@@ -1,6 +1,6 @@
 const DefaultLayout = ({ children }) => {
     return (
-        <div className="bg-[#f9f9f9] p-5 pt-[150px] leading-loose min-h-screen">
+        <div className="bg-black px-[15%] pt-[70px] leading-loose">
             {children}
         </div>
     );

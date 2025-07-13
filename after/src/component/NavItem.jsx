@@ -1,11 +1,14 @@
 const NavItem = ({ nav }) => {
   return (
-    <li className="inline-block mr-[20px]">
+    <li>
       <a
         href={nav.href}
-        className="text-[#444] font-semibold no-underline hover:text-[#BDBDBD]"
+        target={nav.external ? '_blank' : '_self'}
+        rel={nav.external ? 'noopener noreferrer' : undefined}
+        className="flex items-center justify-center text-white font-semibold px-4 py-2 rounded-full no-underline hover:bg-green-300 hover:text-black transition-colors "
+        aria-label={nav.title || 'GitHub'}
       >
-        {nav.title}
+        {nav.icon ? nav.icon : nav.title}
       </a>
     </li>
   );
