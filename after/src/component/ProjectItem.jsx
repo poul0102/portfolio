@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const ProjectItem = ({ project }) => {
     return (
-        <article className="relative h-[20vh] p-10 mb-10 border-2 border-green-300 rounded-4xl text-white flex flex-col justify-between">
+        <article className="relative w-full p-6 md:p-10 mb-10 border-2 border-green-300 rounded-4xl text-white flex flex-col justify-between">
             <div className="absolute top-0 right-15 px-4 py-1 -translate-y-1/2 rounded-4xl border-2 border-green-300 text-lg font-semibold z-5 bg-black">
                 {project.date} ({project.headCount})
             </div>

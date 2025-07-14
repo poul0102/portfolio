@@ -51,7 +51,7 @@ const Projects = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 60 }}
                     transition={{ duration: 0.6 }}
-                    viewport={{ once: false, amount: 0.9 }}
+                    viewport={{ once: false, amount: 0.6 }}
                 >
                     <ProjectItem project={project} />
                 </motion.div>
